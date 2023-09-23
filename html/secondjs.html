@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in JS</title>
+    <script>
+        //  var arr=[10,20,30,40,50,"Ram",4.5,"Krishna"]
+        //  arr.push(90);
+        //  document.write(arr+"<br>");
+        //  arr.pop();
+        //  document.write(arr+"<br>");
+        //  for(var i=0;i<arr.length;i++)
+        //  {
+        //     document.write(arr[i]+"<br>")
+        //  }
+
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // var i = 0;
+        // document.write("Array Values are :" + "<br>")
+        // while (i < 10) {
+        //     document.write(arr[i] + "<br>");
+        //     i++;
+        // }
+
+
+        // var i = 0;
+        // document.write("Array Values are :" + "<br>")
+        // do {
+        //     document.write(arr[i] + "<br>");
+        //     i++;
+        // } while (i < 10);
+
+
+        // var sum = 0;
+        // var j = 0;
+        // document.write("Sum of The Array Are := ")
+        // for (i = 0; i < arr.length; i++) {
+        //     sum = sum + arr[i];
+        //     if (arr[i] % 2 == 0) {
+        //         j++;
+        //     }
+        // }
+        // document.write(sum + "<br>")
+        // document.write("Even no of values in the array =" + j + "<br>")
+
+        // Arrow Function or callback Function:
+        // if we pass a function inside a function as parameter
+
+        // document.write("Array Values are :" + "<br>")
+        // var i = 0;
+        // arr.forEach(i => {
+        //     document.write(i + "<br>");
+        // });
+
+        // arr.map((i => {
+        //     document.write(i + "<br>")
+        // }))
+
+        // arr.filter((i => {
+        //     document.write(i + "<br>")
+        // }))
+
+        // var i = 0;
+        // arr.forEach(i => {
+        //     if (i % 2 == 0)
+        //         document.write(i);
+        // });
+
+        // document.write("<br>");
+        // var data = arr.filter((i) => {
+        //     return i % 2 == 0;
+        // })
+        // document.write(data);
+
+
+        // How to create JSON Objects in JAVASCRIPT
+
+        // var data = { "rollno": 101, "name": "Ram", "marks": 78 }
+        // These are the json objects
+        var student = [{ "rollno": 101, "name": "Ram", "marks": 78 },
+        { "rollno": 102, "name": "Shyam", "marks": 79 },
+        { "rollno": 103, "name": "Kanha", "marks": 80 },
+        { "rollno": 104, "name": "krishan", "marks": 81 }]
+
+        student.map((i) => {
+            document.write(i.rollno + " " + i.name + " " + i.marks + "<br>")
+        })
+
+        //function is a collection of statement which is use for reusability
+        // Advantage of Function : code Reusability
+        //                         categorization
+        //                         Reduce the complexity
+        //                         easy to Debug or maintenence
+        //                         Reduce bailar plate code
+
+        //Recursion ::  sa function call iteself is called recursion
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI</title>
+    <script>
+        function add() {
+            var a = parseInt(document.getElementById("no1").value);
+            var b = parseInt(document.getElementById("no2").value);
+            var sum = a + b;
+            document.getElementById("lb").innerHTML = "Addition= " + sum;
+        }
+
+        function multiply() {
+            var a = parseInt(document.getElementById("no1").value);
+            var b = parseInt(document.getElementById("no2").value);
+            var sum = a * b;
+            document.getElementById("lb").innerHTML = "Multiplication is = " + sum;
+        }
+
+        function Div() {
+            var a = parseInt(document.getElementById("no1").value);
+            var b = parseInt(document.getElementById("no2").value);
+            var sum = a / b;
+            document.getElementById("lb").innerHTML = "Division is = " + sum;
+        }
+    </script>
+</head>
+
+<body>
+    <label for="no1">Enter Number 1: </label>
+    <input type="number" placeholder="Enter No 1" id="no1"><br><br>
+
+    <label for="no2">Enter Number 2: </label>
+    <input type="number" placeholder="Enter NO 2" id="no2"><br><br>
+
+    <button onclick="add()">Addition</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="Div()">Divison</button><br>
+    <label id="lb">Result:</label>
+    
+</body>
+</html>

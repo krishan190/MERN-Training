@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hello() {
+            var select = document.getElementById("select");
+            var data = select.options[select.selectedIndex].value;
+            document.getElementById("lb").innerHTML = data;
+        }
+    </script>
+</head>
+
+<body>
+    Select Country
+    <select id="select">
+        <option>INDIA</option>
+        <option>USA</option>
+        <option>Russian</option>
+        <option>China</option>
+        <option>Pakistan</option>
+    </select>
+
+    <button onclick="hello()">Submit</button><br><br>
+
+    <label id="lb"></label>
+</body>
+
+</html>

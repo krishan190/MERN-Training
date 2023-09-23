@@ -1,22 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter } from 'react-router-dom';
+// add();
+// function add()
+// {
+// var a=10;
+// var b=20;
+// // var c = a+b;
+// // console.log("Addition is  " + c);
+// return (a+b);
+// }
+// var data=add(10,20);
+// console.log("square is " + (data*data));
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  //  <React.StrictMode>
-  //   <App/>,
-  //  </React.StrictMode>
-  <BrowserRouter>
-  <App/>
-  </BrowserRouter>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// var data,no1,no2;
+// function get(a,b)
+// {
+//     no1=a;
+//     no2=b;
+// }
+// function sum()
+// {
+//     var add=no1+no2;
+//     data=add;
+// }
+// function show(){
+//     console.log("addition is "+data);
+// }
+// get(5,4);
+// sum()
+// show()
+
+
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu System</title>
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+            display: flexbox;
+        }
+        h1 {
+            color: white;
+            background-color: blue;
+        }
+
+        #wrapper {
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 50px;
+            /* padding: 30px; */
+        }
+
+        table {
+            background-color: aquamarine;
+        }
+
+        button{
+            background-color: chartreuse;
+            font-size: 25px;
+            border: 2px solid black;
+            border-radius: 9px;
+        }
+        button:hover{
+            color: white;
+            background-color: brown;
+        }
+        .mycontainer{
+            margin: 10px;
+            border: 2px solid black;
+            background-color: skyblue;
+        }
+    </style>
+    <script>
+        function bill() {
+            var name = document.getElementById("cname").value;
+            var dalq = parseInt(document.getElementById("dalq").value);
+            document.getElementById("scname").innerHTML = "Customer Name: = " + name;
+            var rotiq = parseInt(document.getElementById("rotiq").value);
+            var riceq = parseInt(document.getElementById("riceq").value);
+            var sabjiq = parseInt(document.getElementById("sabjiq").value);
+
+            document.getElementById("sdalq").innerHTML = dalq;
+            document.getElementById("sdalA").innerHTML = dalq * 150;
+
+
+            document.getElementById("srotiq").innerHTML = rotiq;
+            document.getElementById("srotiA").innerHTML = rotiq * 7;
+
+            document.getElementById("sriceq").innerHTML = riceq;
+            document.getElementById("sriceA").innerHTML = riceq * 50;
+
+            document.getElementById("Sabjiq").innerHTML = sabjiq;
+            document.getElementById("SabjiA").innerHTML = sabjiq * 70;
+
+            var total = (dalq * 150) + (rotiq * 7) + (riceq * 50) + (sabjiq * 70);
+            document.getElementById("total").innerHTML = total;
+
+            var gst = total * 0.18;
+            document.getElementById("gst").innerHTML = gst;
+
+            var totalpay = total + gst;
+            document.getElementById("totalpay").innerHTML = totalpay;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <center>
+            <h1>Restaurent Billing System</h1>
+           <div class="mycontainer">
+            Name: <input type="text" placeholder="Enter Customer Name" id="cname"><br><br>
+            Dal Quantity: <input type="number" placeholder="Enter Dal Quatity" id="dalq"><br><br>
+
+            Roti Quantity: <input type="number" placeholder="Enter Roti Quantity" id="rotiq"><br><br>
+
+            Rice Quantity: <input type="number" placeholder="Enter Rice Quantity" id="riceq"><br><br>
+
+            Sabji Quantity: <input type="number" placeholder="Enter Sabji Quantity" id="sabjiq"><br><br>
+
+
+            <button onclick="bill()">Submit</button>
+            <h3 id="scname">Customer Name</h3>
+
+           </div>
+            <table border="3px">
+                <tr>
+                    <th>SNO</th>
+                    <th>Items</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Panner Masala</td>
+                    <td>150</td>
+                    <td><label id="sdalq"></label></td>
+                    <td><label id="sdalA"></label></th>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Roti</td>
+                    <td>7</td>
+                    <td><label id="srotiq"></label></td>
+                    <td><label id="srotiA"></label></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rice</td>
+                    <td>50</td>
+                    <td><label id="sriceq"></label></td>
+                    <td><label id="sriceA"></label></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Sabji</td>
+                    <td>70</td>
+                    <td><label id="Sabjiq"></label></td>
+                    <td><label id="SabjiA"></label></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Total</td>
+                    <td></td>
+                    <td></td>
+                    <td><label id="total"></label></td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>GST</td>
+                    <td>18%</td>
+                    <td></td>
+                    <td><label id="gst"></label></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>TotalPay</td>
+                    <td></td>
+                    <td></td>
+                    <td><label id="totalpay"></label></td>
+                </tr>
+            </table>
+
+        </center>
+    </div>
+</body>
+
+</html>

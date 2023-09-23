@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hello()
+        {
+            var male = document.getElementById("male");
+            var female= document.getElementById("female");
+            if(male.checked==true)
+            {
+                document.getElementById("lb").innerHTML="Male";
+            }
+            else if(female.checked==true)
+            {
+                document.getElementById("lb").innerHTML="Female";
+            }
+        }
+    </script>
+</head>
+<body>
+    Gender:  <br><br>
+    male <input type="radio" name="abc" id="male" checked><br><br>
+    Female <input type="radio" name="abc" id="female"><br><br>
+
+    <button onclick="hello()">Submit</button><br><br>
+    <label id="lb"></label>
+</body>
+</html>

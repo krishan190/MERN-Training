@@ -1,0 +1,58 @@
+button {
+    font-size: 30px;
+    background-color: aquamarine;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* span{
+    background-color: aqua;
+} */
+.p1{
+    background-color: rgb(16, 236, 163);
+    color: black;
+}
+.p2{
+    background-color: blue;
+    color: white;
+}
+
+#p3{
+    background-color: burlywood;
+    color: black;
+}
+
+#p4{
+    background-color: rgb(240, 225, 15);
+    color: black;
+}
+
+#p5{
+    background-color: rgb(235, 8, 178);
+    color: black;
+}
+
+#p6{
+    background-color: greenyellow;
+    color: black;
+}
+h1,p{
+    color: aliceblue;
+}
+
+div{
+    margin: 263px;
+    padding: 100px;
+    background-color: greenyellow;
+    background-image: url(kkn1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px;
+    /* We can write 
+    border-width: 10px;
+    border-color: red;
+    border-style: solid;
+    */
+    border: 5px green solid;
+    border-radius: 30px;
+    
+}
